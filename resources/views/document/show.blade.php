@@ -60,10 +60,12 @@
             تاريخ الرد
             <span class="text-secondary">{{$document->replay_date}}</span>
         </div>
+        @if($document->url)
         <div class="col-md-4">
             الملف
-            <a href="{{asset('storage/'.$document->url)}}">تنزيل</a>
+            <a href="{{asset('storage/'.$document->url)}}"> مشاهدة</a>
         </div>
+        @endif
 
     </div>
 

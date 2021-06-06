@@ -21,6 +21,8 @@ Route::get('document/create/{folder}',[HomeController::class,'documentCreate'])-
 Route::post('document/store',[HomeController::class,'documentStore'])->name('document.store');
 Route::post('file/store/{document}',[HomeController::class,'fileStore'])->name('file.store');
 
+Route::get('document/{folder}/print',[HomeController::class,'documentPrint'])->name('document.print');
+
 Route::post('search',[HomeController::class,'search'])->name('search');
 
 Route::get('admin/index',[PlaceController::class,'adminIndex'])->name('admin.index');

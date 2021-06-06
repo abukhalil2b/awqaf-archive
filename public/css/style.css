@@ -29,3 +29,15 @@
     border-radius: 5px;
     font-weight: bold;
 }
+
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
+
+.h60{
+    height: 60px
+}

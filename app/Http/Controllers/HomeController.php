@@ -79,4 +79,10 @@ class HomeController extends Controller {
 		$documents = $search->get();
 		return view('search.result', compact('documents'));
 	}
+
+
+	public function documentPrint(Folder $folder) {
+		$documents = Document::where('folder_id', $folder->id)->get();
+		return view('document.print', compact('documents', 'folder'));
+	}
 }
